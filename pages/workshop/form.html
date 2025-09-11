@@ -12,28 +12,35 @@
         </header>
         <main>
             <form>
-                <section id="Personal Information">
-                    <p>Personal Information</p>
+                <fieldset name="Personal Information">
+                    <legend>Personal Information</legend>
                     <label for="name">Name (required): </label>
-                    <input required type="text" id="name" placeholder="Ex. John Doe"/>
+                    <input 
+                        required
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Ex. John Doe"
+                        size="20"
+                    />
                     
                     <label for="email">Email address (required): </label>
-                    <input required type="email" id="email" placeholder="example@email.com"/>
+                    <input required type="email" id="email" name="id" placeholder="example@email.com" size="20"/>
                     
                     <label for="age">Age (optional): </label>
-                    <input type="number" id="age" min="3" max\="100"/>
-                </section>
+                    <input type="number" id="age" name="age" min="3" max\="100"/>
+                </fieldset>
 
-                <section id="First Time">
-                    <p>Was this your first time at our hotel?</p>
-                    <label for="yes">Yes</label>
+                <fieldset name="First Time">
+                    <legend>Was this your first time at our hotel?</legend>
                     <input type="radio" id="yes" name="first_time" value="Yes"/>
-                    <label for="no">No</label>
+                    <label for="yes">Yes</label>
                     <input type="radio" id="no" name="first_time" value="No"/>
-                </section>
+                    <label for="no">No</label>
+                </fieldset>
 
-                <section id="Reference">
-                    <p>Why did you choose to stay at our hotel? (Check all that apply)</p>
+                <fieldset name="Reference">
+                    <legend>Why did you choose to stay at our hotel? (Check all that apply)</legend>
                     <label for="social-media">Social Media Ads</label>
                     <input type="checkbox" id="social-media" name="social-media" value="social-media"/>
                     
@@ -48,9 +55,9 @@
                 
                     <label for="price">Price</label>
                     <input type="checkbox" id="price" name="price" value="price"/>
-                </section>
+                </fieldset>
 
-                <section id="Ratings">
+                <fieldset name="Ratings">
                     <label for="service">How was the service?</label>
                     <select name="service" id="service">
                         <option value="poor">Poor</option>
@@ -67,12 +74,12 @@
                         <option value="very-good">Very Good</option>
                         <option value="excellent">Excellent</option>
                     </select>
-                </section>
-                <section id="comment-section">
+                </fieldset>
+                <fieldset name="comment-fieldset">
                     <label for="comments">Other Comments?</label>
                     <textarea id="comments" name="comments" rows="4" cols="50">
                     </textarea>
-                </section>
+                </fieldset>
                 <button type="submit">Submit</button>
             </form>
         </main>
