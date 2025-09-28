@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Checkout Page</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Checkout Page</h1>
+            <p>Please checkout your items here.</p>
+            <nav>
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="../../index.html">Main Page</a></li>
+                    <li><a href="./workshop.html">Workshop</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="your-cart">
+                <h2>Your Cart</h2>
+                <image src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="rubix cube"/>
+            </section>
+        
+            <section id="payment-info-form">
+                <h2>Payment Information</h2>
+                <form>
+                    <label for="card-name">Cardholder Name<span aria-hidden="true">*</span></label>
+                    <input required type="text" id="card-name" name="card-name"/>
+        
+                    <label for="card-number">Card Number<span aria-hidden="true">*</span></label>
+                    <input required type="text" id="card-number" name="card-number" aria-describedby="card-number-help"/>      
+                    <p id="card-number-help">Please enter your 16-digit card number without spaces or dashes.</p>
+        
+                    <label for="card-expiration">Card Expiration Date</label>
+                    <input type="text" id="card-expiration" name="card-expiration"/>
+        
+                    <label for="card-code">Card Security Code</label>
+                    <input type="number" id="card-code" name="card-code"/>       
+        
+                    <button type="submit">Submit</button>
+                </form>
+            </section>    
+        </main>
+    </body>
+</html>
