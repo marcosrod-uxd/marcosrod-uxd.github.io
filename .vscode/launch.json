@@ -9,7 +9,7 @@
             "request": "launch",
             "reAttach": true,
             "name": "Launch thesis.html",
-            "file": "${workspaceFolder}/pages/workshop/thesis.html"
+            "file": "${workspaceFolder}/pages/portfolio/thesis.html"
         },
         {
             "type": "chrome",
